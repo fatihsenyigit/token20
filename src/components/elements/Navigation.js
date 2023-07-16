@@ -1,6 +1,5 @@
 import { ethers } from "ethers";
-import React, { useEffect, useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import React, {  useContext } from "react";
 import { Button, Menu } from "semantic-ui-react";
 import { Web3DataContext } from "../../context/Web3Context";
 import DrugAuht from "../../contracts/DrugAuth.json";
@@ -8,7 +7,6 @@ const Navigation = () => {
   const { provider, address, onConnectClick, balance, usdtBalance } =
     useContext(Web3DataContext);
 
-  console.log("Navigation  balance:", { balance, address });
   return (
     <>
       <Menu.Header as="a" href="/" className="logo">

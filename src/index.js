@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { Web3DataProvider } from "./context/Web3Context";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'alertifyjs/build/css/alertify.css';
 
 //import * as serviceWorker from './serviceWorker';
 
